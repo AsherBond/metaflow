@@ -212,6 +212,7 @@ def output_dot(obj):
     )
     echo_always(obj.graph.output_dot(), err=False)
 
+
 @cli.command(help="Print the Metaflow version")
 @click.pass_obj
 def version(obj):
@@ -323,7 +324,6 @@ def start(
     config_value_options=None,
     **deco_options
 ):
-    
     if quiet:
         echo = echo_dev_null
     else:
